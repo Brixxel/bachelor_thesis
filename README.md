@@ -1,4 +1,4 @@
-# Thesis: Evaluating Embedding Suitability for German Tax Law
+# Evaluating Embedding Suitability for German Tax Law
 
 ## Motivation and Problem Statement
 
