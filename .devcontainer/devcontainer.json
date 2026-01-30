@@ -1,0 +1,27 @@
+{
+  "name": "LaTeX BA Thesis",
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+  "features": {
+    // Installiert Git und grundlegende Tools
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    // Installiert TeX Live (die LaTeX Distribution)
+    "ghcr.io/devcontainers-contrib/features/latex:2": {
+      "version": "latest",
+      "scheme": "full" 
+    }
+  },
+  // Installiert automatisch die wichtigste VS Code Extension
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "James-Yu.latex-workshop",
+        "ban.spellright" 
+      ]
+    }
+  },
+  // Optional: Kopiert Einstellungen, damit PDF-Viewer etc. gut funktionieren
+  "settings": {
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "onFileChange"
+  }
+}
